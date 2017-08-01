@@ -10,8 +10,9 @@ namespace JobSearch.TestSuite
     public class ResultsTests : WebDriverTestBase
     {
         [Test]
-        [TestCase("https://www.ziprecruiter.com", "DevOps", "Colorado", TestName = "DevOps")]
-        [TestCase("https://www.ziprecruiter.com", "Selenium", "Colorado", TestName = "Selenium")]
+        //[TestCase("https://www.ziprecruiter.com", "DevOps", "Colorado", TestName = "DevOps")]
+        //[TestCase("https://www.ziprecruiter.com", "Selenium", "Colorado", TestName = "Selenium")]
+        [TestCase("https://www.ziprecruiter.com", "Facilities", "Colorado", TestName = "Facilities")]
         public void ZipWriteResultsTests(string url, string searchWord, string location)
         {
             driver.Navigate().GoToUrl(url);
@@ -22,8 +23,9 @@ namespace JobSearch.TestSuite
         }
 
         [Test]
-        [TestCase("https://www.indeed.com", "DevOps", "Colorado", TestName = "DevOps")]
-        [TestCase("https://www.indeed.com", "Selenium", "Colorado", TestName = "Selenium")]
+        //[TestCase("https://www.indeed.com", "DevOps", "Colorado", TestName = "DevOps")]
+        //[TestCase("https://www.indeed.com", "Selenium", "Colorado", TestName = "Selenium")]
+        [TestCase("https://www.indeed.com", "Facilities", "Colorado", TestName = "Facilities")]
         public void IndeedWriteResultsTests(string url, string searchWord, string location)
         {
             driver.Navigate().GoToUrl(url);
@@ -35,8 +37,9 @@ namespace JobSearch.TestSuite
         }
 
         [Test]
-        [TestCase("https://www.dice.com", "DevOps", "Colorado", TestName = "DevOps")]
-        [TestCase("https://www.dice.com", "Selenium", "Colorado", TestName = "Selenium")]
+        //[TestCase("https://www.dice.com", "DevOps", "Colorado", TestName = "DevOps")]
+        //[TestCase("https://www.dice.com", "Selenium", "Colorado", TestName = "Selenium")]
+        [TestCase("https://www.dice.com", "Facilities", "Colorado", TestName = "Facilities")]
         public void DiceWriteResultsTests(string url, string searchWord, string location)
         {
             driver.Navigate().GoToUrl(url);
