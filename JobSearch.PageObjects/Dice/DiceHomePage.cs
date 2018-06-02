@@ -6,7 +6,7 @@ namespace JobSearch.PageObjects.Dice
 {
     public class DiceHomePage : BasePageObject
     {
-        private readonly Element _advancedSearchBtn = new Element(By.XPath("//a[contains(.,' Advanced Search')]"));
+        private readonly Element _advancedSearchBtn = new Element(By.CssSelector("#search-form a"));
 
         public DiceAdvancedSearchPage GoToSearchPage()
         {

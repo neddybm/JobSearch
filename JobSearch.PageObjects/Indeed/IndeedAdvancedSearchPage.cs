@@ -14,7 +14,7 @@ namespace JobSearch.PageObjects.Indeed
         private readonly Element _displaySelect = new Element(By.Id("limit"));
         private readonly Element _display50Option = new Element(By.XPath("//select[@id='limit']/option[contains(.,'50')]"));
         private readonly Element _submitBtn = new Element(By.Id("fj"));
-
+        
         public IndeedSearchResultsPage GoToSearchResultsPage(string searchWord, string location)
         {
             _searchField.SetText(searchWord);

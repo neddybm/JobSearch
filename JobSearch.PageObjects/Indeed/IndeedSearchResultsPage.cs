@@ -8,7 +8,14 @@ namespace JobSearch.PageObjects.Indeed
 {
     public class IndeedSearchResultsPage : BasePageObject
     {
+        private readonly Element _advancedSearchBtn = new Element(By.XPath("//a[contains(.,'Advanced Job Search')]"));
         private readonly Element _jobsList = new Element(By.XPath("//div[@data-tn-component='organicJob']"));
+        
+        public IndeedAdvancedSearchPage GoToAdvancedSearchPage()
+        {
+            _advancedSearchBtn.Click();
+            return new IndeedAdvancedSearchPage();
+        }
 
         public string GetListings(string searchWord)
         {
